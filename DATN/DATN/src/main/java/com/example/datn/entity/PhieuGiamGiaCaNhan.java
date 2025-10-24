@@ -30,13 +30,13 @@ public class PhieuGiamGiaCaNhan {
     private String ten;
 
     @Column(name = "ngay_nhan")
-    private Date ngayBatDau;
+    private Date ngayNhan;
 
     @Column(name = "ngay_het_han")
-    private Date ngayKetThuc;
+    private Date ngayHetHan;
 
     @Column(name = "trang_thai")
-    private Boolean trangThai;
+    private Boolean trangThai; //0 la false, 1 la true
 
     @ManyToOne
     @JoinColumn(name = "id_phieu_giam_gia")
